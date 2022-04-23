@@ -27,6 +27,7 @@ const Aside = ({ image, collapsed, rtl, toggled, handleToggleSidebar }) => {
         <div
           style={{
             padding: '24px',
+            paddingTop: '250px',
             textTransform: 'uppercase',
             fontWeight: 'bold',
             fontSize: 14,
@@ -93,7 +94,7 @@ const Aside = ({ image, collapsed, rtl, toggled, handleToggleSidebar }) => {
           }}
         >
           <a
-            href="https://github.com/azouaoui-med/react-pro-sidebar"
+            href="https://github.com/JJDSNT/otfrontend2"
             target="_blank"
             className="sidebar-btn"
             rel="noopener noreferrer"

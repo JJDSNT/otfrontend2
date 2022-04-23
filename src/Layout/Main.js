@@ -14,12 +14,18 @@ const Main = ({
 
   return (
     <main>
+      A<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />B
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />C
       <div className="btn-toggle" onClick={() => handleToggleSidebar(true)}>
         <FaBars />
       </div>
       <header>
 teste
       </header>
+      alo
+      <div className="btn-toggle" onClick={() => handleToggleSidebar(true)}>
+        <FaBars />
+      </div>
     </main>
   );
 };
