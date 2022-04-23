@@ -1,7 +1,7 @@
 import React from 'react';
 import { useIntl } from 'react-intl';
-import { FaHeart, FaBars } from 'react-icons/fa';
-import reactLogo from './assets/logo.jpg';
+import { FaBars } from 'react-icons/fa';
+
 
 const Main = ({
   collapsed,
@@ -12,7 +12,7 @@ const Main = ({
   handleRtlChange,
   handleImageChange,
 }) => {
-  const intl = useIntl();
+
   return (
     <main>
       <div className="btn-toggle" onClick={() => handleToggleSidebar(true)}>

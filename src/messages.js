@@ -1,4 +1,4 @@
-export default {
+const messages = {
     ar: {
       title: 'رياكت پرو سايد بار',
       sidebarTitle: 'پرو سايد بار',
@@ -35,3 +35,5 @@ export default {
       viewSource: 'View Source',
     },
   };
+
+  export default messages;
