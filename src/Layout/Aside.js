@@ -1,4 +1,5 @@
 import React from 'react';
+import avatar from './assets/avatar.jpg';
 import { useIntl } from 'react-intl';
 import {
   ProSidebar,
@@ -10,7 +11,7 @@ import {
   SidebarContent,
 } from 'react-pro-sidebar';
 import { FaTachometerAlt, FaGem, FaList, FaGithub, FaRegLaughWink, FaHeart } from 'react-icons/fa';
-import sidebarBg from './assets/bg2.jpg';
+import sidebarBg from './assets/bg.jpg';
 
 const Aside = ({ image, collapsed, rtl, toggled, handleToggleSidebar }) => {
   const intl = useIntl();
@@ -27,7 +28,7 @@ const Aside = ({ image, collapsed, rtl, toggled, handleToggleSidebar }) => {
         <div
           style={{
             padding: '24px',
-            paddingTop: '250px',
+            paddingTop: '100px',
             textTransform: 'uppercase',
             fontWeight: 'bold',
             fontSize: 14,
@@ -37,7 +38,11 @@ const Aside = ({ image, collapsed, rtl, toggled, handleToggleSidebar }) => {
             whiteSpace: 'nowrap',
           }}
         >
-          {intl.formatMessage({ id: 'sidebarTitle' })}
+        <center>
+        <img src={avatar} style={{width:'32px', height:'32px', top:'10px', left:'10px', borderRadius:'50%'}} />
+        <br />
+        user
+        </center>
         </div>
       </SidebarHeader>
 

@@ -17,10 +17,9 @@ const messages = {
       viewSource: 'عرض الكود',
     },
     en: {
-      title: 'React Pro Sidebar',
-      sidebarTitle: 'Pro Sidebar',
-      description:
-        'React sidebar library with dropdown menus and unlimited number of nested submenus',
+      title: 'ObservaTudo message',
+      sidebarTitle: 'ObservaTudo',
+      description: 'Dashboard para acompanhamento de indicadores',
       dashboard: 'Dashboard',
       components: 'Components',
       dropdown: 'Dropdown',
@@ -32,7 +31,7 @@ const messages = {
       new: 'NEW',
       withPrefix: 'With Prefix',
       withSuffix: 'With Suffix',
-      viewSource: 'View Source',
+      viewSource: 'Código-fonte',
     },
   };
 

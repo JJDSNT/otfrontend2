@@ -28,8 +28,17 @@ function Layout({ setLocale }) {
   return (
   
     <div className={`app ${rtl ? 'rtl' : ''} ${toggled ? 'toggled' : ''}`}>
-      <Navbar />
-      <Aside
+      <Navbar
+       image={image}
+       toggled={toggled}
+       collapsed={collapsed}
+       rtl={rtl}
+       handleToggleSidebar={handleToggleSidebar}
+       handleCollapsedChange={handleCollapsedChange}
+       handleRtlChange={handleRtlChange}
+       handleImageChange={handleImageChange}
+        />
+        <Aside
         image={image}
         collapsed={collapsed}
         rtl={rtl}
@@ -46,6 +55,7 @@ function Layout({ setLocale }) {
         handleRtlChange={handleRtlChange}
         handleImageChange={handleImageChange}
       />
+      
     </div>
   );
 }
