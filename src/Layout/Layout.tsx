@@ -4,13 +4,15 @@ import Aside from './Aside';
 import Main from './Main';
 
 function Layout() {
-  const [collapsed, setCollapsed] = useState(false);
-  const [toggled, setToggled] = useState(false);
 
-  const handleCollapsedChange = (checked) => {
+  const [collapsed, setCollapsed] = useState<boolean>(false);
+  const [toggled, setToggled] = useState<boolean>(false);
+
+  const handleCollapsedChange = (checked:boolean) => {
     setCollapsed(checked);
   };
-  const handleToggleSidebar = () => {
+
+  const handleToggleSidebar = ():void => {
     setToggled(!toggled);
   };
 
@@ -23,14 +25,8 @@ function Layout() {
         collapsed={collapsed}
         toggled={toggled}
         handleToggleSidebar={handleToggleSidebar}
-        handleCollapsedChange={handleCollapsedChange}
       />
-      <Main
-        toggled={toggled}
-        collapsed={collapsed}
-        handleToggleSidebar={handleToggleSidebar}
-        handleCollapsedChange={handleCollapsedChange}
-      />
+      <Main />
     </div>
   );
 }

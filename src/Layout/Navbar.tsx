@@ -1,9 +1,13 @@
 import React from 'react';
 import logo from './assets/logo.jpg';
 
+interface Props{
+    handleToggleSidebar: () => void;
+}
+
 const Navbar = ({
   handleToggleSidebar
-}) => {
+}:Props) => {
 
     return (
         <nav className="navbar navbar-expand-lg navbar-dark fixed-top" style={{backgroundColor:'#041E42',paddingBottom:'2px',height:'50px'}} role = "navigation">
@@ -22,7 +26,7 @@ const Navbar = ({
                     
             </div>
 
-            <button  onClick={() => handleToggleSidebar(true)} id="showLeft" className="navbar-toggler navbar-toggler-right" style={{marginTop:'-7px'}} type="button"  aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <button  onClick={() => handleToggleSidebar()} id="showLeft" className="navbar-toggler navbar-toggler-right" style={{marginTop:'-7px'}} type="button"  aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
         

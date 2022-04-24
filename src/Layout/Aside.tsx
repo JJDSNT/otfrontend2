@@ -11,11 +11,17 @@ import {
 import { FaGithub, FaGlobeAmericas, FaHeartbeat, FaHome, FaList, FaMoneyBillWave, FaQuestion, FaSearch, FaUserGraduate, FaShieldAlt } from 'react-icons/fa';
 import sidebarBg from './assets/bg.jpg';
 
-const Aside = ({ collapsed, rtl, toggled, handleToggleSidebar }) => {
+interface Props{
+  collapsed: boolean;
+  toggled: boolean;
+  handleToggleSidebar: () => void;
+}
+
+const Aside = ({ collapsed, toggled, handleToggleSidebar }:Props) => {
   return (
     <ProSidebar
       image={sidebarBg}
-      rtl={rtl}
+
       collapsed={collapsed}
       toggled={toggled}
       breakPoint="md"
@@ -35,11 +41,11 @@ const Aside = ({ collapsed, rtl, toggled, handleToggleSidebar }) => {
             whiteSpace: 'nowrap',
           }}
         >
-        <center>
+      <div style={{justifyContent:'center'}}>
         <img src={avatar} style={{width:'32px', height:'32px', top:'10px', left:'10px', borderRadius:'50%'}} alt="avatar"/>
         <br />
         user
-        </center>
+      </div>
         </div>
       </SidebarHeader>
 
