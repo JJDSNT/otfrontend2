@@ -41,7 +41,7 @@ const Aside = ({ collapsed, toggled, handleToggleSidebar }:Props) => {
             whiteSpace: 'nowrap',
           }}
         >
-      <div style={{justifyContent:'center'}}>
+      <div style={{justifyContent:'center', textAlign:'center'}}>
         <img src={avatar} style={{width:'32px', height:'32px', top:'10px', left:'10px', borderRadius:'50%'}} alt="avatar"/>
         <br />
         user
