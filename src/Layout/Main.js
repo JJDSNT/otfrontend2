@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaBars, FaBicycle, FaGlobeAmericas, FaHeartbeat, FaHome, FaMoneyBillWave, FaQuestion, FaUserGraduate,  FaShieldAlt } from 'react-icons/fa';
+import { FaBicycle, FaGlobeAmericas, FaHeartbeat, FaHome, FaList, FaMoneyBillWave, FaQuestion, FaSearch, FaUserGraduate,  FaShieldAlt } from 'react-icons/fa';
 
 
 const Main = ({
@@ -12,24 +12,54 @@ const Main = ({
   handleImageChange,
 }) => {
 
-  return (
+  return (    
     <main>
-  <div className="container" style={{paddingTop:'100px'}}>
-      <form className="row">
-        <div className="col">
+
+
+  <div className="container-fluid text-center align-items-center" style={{paddingTop:'40px'}}>
+  <header>
+
+    <div className="d-flex justify-content-around">
+    
+    <div className="col-4">
+    <form className="d-flex justify-content-around">
+    <div className="input-group">
           <select className="form-select" name="estado" id="estado">
             <option value=""> Estado</option>
             <option value="1"> Estado 1</option>
             <option value="2"> Estado 2</option>
           </select>
-        </div>    
-        <div className="col">
+  
+
           <select className="form-select" name="cidade" id="cidade">
             <option value=""> Selecione o estado</option>  
           </select>
-        </div>
+
         <input id="eixo" type="text" readonly hidden value="0"></input>
-      </form>
+        </div>
+    </form>
+    </div>
+
+
+    <div className="col-3">
+
+        <div className="input-group input-group-sm">
+          <input type="text" className="form-control col-sm" placeholder="Pesquisar indicadores ..." aria-label="pesquisar indicadores" />
+          <button type="submit" class="btn btn-primary">
+              <FaSearch />
+          </button>
+          {'&nbsp;'}
+        <button type="button" class="btn btn-primary .btn-sm w-30">
+            <FaList /> Listar
+        </button>
+        </div> 
+        </div>
+
+
+
+
+    </div>
+  </header>
 <hr />
 
 
@@ -68,20 +98,13 @@ const Main = ({
     </div>
   </div>
 
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />C
-      <div classNameName="btn-toggle" onClick={() => handleToggleSidebar(true)}>
-        <FaBars />
-      </div>
 
-      alo
-      <div className="btn-toggle" onClick={() => handleToggleSidebar(true)}>
-        <FaBars />
-      </div>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />d
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />e
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />f
+
+      <footer><hr />footer</footer>
+
     </div>
-    </main>
+</main>
+
   );
 };
 

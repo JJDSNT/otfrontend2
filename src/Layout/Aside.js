@@ -13,11 +13,11 @@ import {
 import { FaTachometerAlt, FaGem, FaList, FaGithub, FaRegLaughWink, FaHeart } from 'react-icons/fa';
 import sidebarBg from './assets/bg.jpg';
 
-const Aside = ({ image, collapsed, rtl, toggled, handleToggleSidebar }) => {
+const Aside = ({ collapsed, rtl, toggled, handleToggleSidebar }) => {
   const intl = useIntl();
   return (
     <ProSidebar
-      image={image ? sidebarBg : false}
+      image={sidebarBg}
       rtl={rtl}
       collapsed={collapsed}
       toggled={toggled}
@@ -28,7 +28,7 @@ const Aside = ({ image, collapsed, rtl, toggled, handleToggleSidebar }) => {
         <div
           style={{
             padding: '24px',
-            paddingTop: '100px',
+            paddingTop: '80px',
             textTransform: 'uppercase',
             fontWeight: 'bold',
             fontSize: 14,
@@ -59,11 +59,15 @@ const Aside = ({ image, collapsed, rtl, toggled, handleToggleSidebar }) => {
         <Menu iconShape="circle">
           <SubMenu
             suffix={<span className="badge yellow">3</span>}
-            title={intl.formatMessage({ id: 'withSuffix' })}
+            title='Eixos'
             icon={<FaRegLaughWink />}
           >
-            <MenuItem>{intl.formatMessage({ id: 'submenu' })} 1</MenuItem>
-            <MenuItem>{intl.formatMessage({ id: 'submenu' })} 2</MenuItem>
+            <MenuItem>Saúde</MenuItem>
+            <MenuItem>Educação</MenuItem>
+            <MenuItem>Assistência Social</MenuItem>
+            <MenuItem>Educação</MenuItem>
+            <MenuItem>Saúde</MenuItem>
+            <MenuItem>Educação</MenuItem>
             <MenuItem>{intl.formatMessage({ id: 'submenu' })} 3</MenuItem>
           </SubMenu>
           <SubMenu
