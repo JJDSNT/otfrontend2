@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 import Aside from './Aside';
 import Main from './Main';
 
-function Layout({ setLocale }) {
+function Layout() {
   const [collapsed, setCollapsed] = useState(false);
   const [toggled, setToggled] = useState(false);
 
