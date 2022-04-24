@@ -8,7 +8,7 @@ import {
   SidebarFooter,
   SidebarContent,
 } from 'react-pro-sidebar';
-import { FaGithub, FaGlobeAmericas, FaHeartbeat, FaHome, FaList, FaMoneyBillWave, FaQuestion, FaSearch, FaUserGraduate,  FaShieldAlt, FaGem } from 'react-icons/fa';
+import { FaGithub, FaGlobeAmericas, FaHeartbeat, FaHome, FaList, FaMoneyBillWave, FaQuestion, FaSearch, FaUserGraduate, FaShieldAlt } from 'react-icons/fa';
 import sidebarBg from './assets/bg.jpg';
 
 const Aside = ({ collapsed, rtl, toggled, handleToggleSidebar }) => {
