@@ -35,25 +35,13 @@ const Main = () => {
 
     <div className="col-3">
 
-        <div className="input-group input-group-sm">
-          <input type="text" className="form-control col-sm" placeholder="Pesquisar indicadores ..." aria-label="pesquisar indicadores" />
-          <button type="submit" className="btn btn-primary">
-              <FaSearch />
-          </button>
-          {'&nbsp;'}
-        <button type="button" className="btn btn-primary .btn-sm w-30">
-            <FaList /> Listar
-        </button>
-        </div> 
+ 
         </div>
-
-
-
-
     </div>
+    <br />
   </header>
-<hr />
 
+  <hr />
 
   <div id="eixos" className="row g-2 text-center align-items-center">
     <div className="col">
