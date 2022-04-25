@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaBicycle, FaGlobeAmericas, FaHeartbeat, FaHome, FaList, FaMoneyBillWave, FaQuestion, FaSearch, FaUserGraduate,  FaShieldAlt } from 'react-icons/fa';
+import { FaBicycle, FaGlobeAmericas, FaHeartbeat, FaHome, FaMoneyBillWave, FaQuestion, FaUserGraduate,  FaShieldAlt } from 'react-icons/fa';
 
 
 const Main = () => {
@@ -13,7 +13,7 @@ const Main = () => {
 
     <div className="d-flex justify-content-around">
     
-    <div className="col-4">
+    
     <form className="d-flex justify-content-around">
     <div className="input-group">
           <select className="form-select" name="estado" id="estado">
@@ -30,13 +30,8 @@ const Main = () => {
         <input id="eixo" type="text" readOnly hidden value="0"></input>
         </div>
     </form>
-    </div>
 
 
-    <div className="col-3">
-
- 
-        </div>
     </div>
     <br />
   </header>
