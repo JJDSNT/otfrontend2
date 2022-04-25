@@ -55,7 +55,7 @@ const Aside = ({ collapsed, toggled, handleToggleSidebar }:Props) => {
           <MenuItem icon={<FaUserGraduate />}> Educação</MenuItem>
           <MenuItem icon={<FaHome />}> Assistência social</MenuItem>
           <MenuItem icon={<FaShieldAlt />}> Segurança</MenuItem>
-          <MenuItem icon={<FaGlobeAmericas />}> Meio ambiente,<br />Urbanização &<br />mobilidade</MenuItem>
+          <MenuItem icon={<FaGlobeAmericas />}> Meio ambiente,<br />Urbanização &<br />Mobilidade</MenuItem>
           <MenuItem icon={<FaMoneyBillWave />}> Economia & Finanças</MenuItem>
           <MenuItem icon={<FaQuestion />}> Personalizado</MenuItem>
         </Menu>
