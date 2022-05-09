@@ -8,7 +8,7 @@ import {
   SidebarFooter,
   SidebarContent,
 } from 'react-pro-sidebar';
-import { FaGithub, FaGlobeAmericas, FaHeartbeat, FaHome, FaList, FaMoneyBillWave, FaQuestion, FaSearch, FaUserGraduate, FaShieldAlt } from 'react-icons/fa';
+import { FaGithub, FaGlobeAmericas, FaHeartbeat, FaHome, FaList, FaMoneyBillWave, FaQuestion, FaUserGraduate, FaShieldAlt } from 'react-icons/fa';
 import sidebarBg from './assets/bg.jpg';
 
 interface Props{
@@ -60,7 +60,6 @@ const Aside = ({ collapsed, toggled, handleToggleSidebar }:Props) => {
           <MenuItem icon={<FaQuestion />}> Personalizado</MenuItem>
         </Menu>
         <Menu iconShape="square">
-          <MenuItem icon={<FaSearch />}> Pesquisar indicadores</MenuItem>
           <MenuItem icon={<FaList />}> Listar indicadores</MenuItem>
           </Menu>
       </SidebarContent>
