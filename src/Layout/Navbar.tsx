@@ -26,8 +26,8 @@ const Navbar = ({
                     
             </div>
 
-            <button  onClick={() => handleToggleSidebar()} id="showLeft" className="navbar-toggler navbar-toggler-right" style={{marginTop:'-7px'}} type="button"  aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
+            <button  onClick={() => handleToggleSidebar()} id="toogle" className="navbar-toggler navbar-toggler-right" style={{marginTop:'-7px'}} type="button"  aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
             </button>
         
             </div>

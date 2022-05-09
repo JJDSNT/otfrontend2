@@ -8,16 +8,17 @@ import {
   SidebarFooter,
   SidebarContent,
 } from 'react-pro-sidebar';
-import { FaGithub, FaGlobeAmericas, FaHeartbeat, FaHome, FaList, FaMoneyBillWave, FaQuestion, FaUserGraduate, FaShieldAlt } from 'react-icons/fa';
+import { FaArrowsAltH, FaGithub, FaGlobeAmericas, FaHeartbeat, FaHome, FaList, FaMoneyBillWave, FaQuestion, FaUserGraduate, FaShieldAlt } from 'react-icons/fa';
 import sidebarBg from './assets/bg.jpg';
 
 interface Props{
   collapsed: boolean;
   toggled: boolean;
   handleToggleSidebar: () => void;
+  handleCollapsedChange: () => void;
 }
 
-const Aside = ({ collapsed, toggled, handleToggleSidebar }:Props) => {
+const Aside = ({ collapsed, toggled, handleToggleSidebar, handleCollapsedChange }:Props) => {
   return (
     <ProSidebar
       image={sidebarBg}
@@ -45,11 +46,15 @@ const Aside = ({ collapsed, toggled, handleToggleSidebar }:Props) => {
         <img src={avatar} style={{width:'32px', height:'32px', top:'10px', left:'10px', borderRadius:'50%'}} alt="avatar"/>
         <br />
         user
+
       </div>
         </div>
       </SidebarHeader>
 
       <SidebarContent>
+      <Menu iconShape="circle">
+      <MenuItem icon={<FaArrowsAltH />} onClick={() => handleCollapsedChange()}> Saúde</MenuItem>
+      </Menu>
         <Menu iconShape="circle">
           <MenuItem icon={<FaHeartbeat />}> Saúde</MenuItem>
           <MenuItem icon={<FaUserGraduate />}> Educação</MenuItem>

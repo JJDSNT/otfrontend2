@@ -8,6 +8,10 @@ function Layout() {
   const [collapsed, setCollapsed] = useState<boolean>(false);
   const [toggled, setToggled] = useState<boolean>(false);
 
+  const handleCollapsedChange = ():void => {
+    setCollapsed(!collapsed);
+  };
+
   const handleToggleSidebar = ():void => {
     setToggled(!toggled);
   };
@@ -21,6 +25,7 @@ function Layout() {
         collapsed={collapsed}
         toggled={toggled}
         handleToggleSidebar={handleToggleSidebar}
+        handleCollapsedChange={handleCollapsedChange}
       />
       <Main />
     </div>
