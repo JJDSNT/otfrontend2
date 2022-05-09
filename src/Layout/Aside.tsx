@@ -53,7 +53,7 @@ const Aside = ({ collapsed, toggled, handleToggleSidebar, handleCollapsedChange 
 
       <SidebarContent>
       <Menu iconShape="circle">
-      <MenuItem icon={<FaArrowsAltH />} onClick={() => handleCollapsedChange()}> Saúde</MenuItem>
+      <MenuItem icon={<FaArrowsAltH />} onClick={() => handleCollapsedChange()}> Menu</MenuItem>
       </Menu>
         <Menu iconShape="circle">
           <MenuItem icon={<FaHeartbeat />}> Saúde</MenuItem>
