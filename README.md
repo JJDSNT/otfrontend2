@@ -7,7 +7,7 @@
 
 
 Esse é meu primeiro projeto destinado ao estudo e aprendizagem do [React](https://pt-br.reactjs.org/) (com [Redux](https://redux.js.org/) e [TypeScript](https://www.typescriptlang.org/)).\
-É um dashboard para indicadores utilizando dados abertos e com o [Laravel](https://laravel.com/) como backend.
+É um dashboard para indicadores utilizando dados abertos e com o [Laravel](https://laravel.com/) como [backend](https://github.com/JJDSNT/observatudo_api).
 
 
 --
