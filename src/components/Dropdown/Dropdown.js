@@ -1,12 +1,10 @@
 import React, {useState} from "react";
-import "react-widgets/scss/styles.scss";
-import DropdownList from "react-widgets/DropdownList";
-
+import "react-widgets/styles.css";
+import { DropdownList } from "react-widgets";
 
 
 const DropdownCombo = () => { 
 
-  const [estado, setEstado] = useState({id:11,uf:'RD'});
 
   let estados = [
     {id:11,uf:'RD'},
@@ -39,19 +37,19 @@ const DropdownCombo = () => {
     {id:99,uf:'UF'}
   ];
 
+  const [estado, setEstado] = useState({id:11,uf:'RD'});
+
+
 return(
 
-<form className="d-flex justify-content-around">
-<div className="input-group">
     <DropdownList
     value={estado}
     data={estados}
     dataKey='id'
     textField='uf'
-    onChange={(selectedState) => setEstado(selectedState)}
+    onChange={value => setEstado(value)}
 />
-</div>
-</form>
+
 );
 };
 
