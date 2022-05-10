@@ -1,4 +1,5 @@
 import React from 'react';
+import DropdownCombo from '../components/Dropdown/Dropdown';
 import { FaBicycle, FaGlobeAmericas, FaHeartbeat, FaHome, FaMoneyBillWave, FaQuestion, FaUserGraduate,  FaShieldAlt } from 'react-icons/fa';
 
 
@@ -10,8 +11,8 @@ const Main = () => {
 
   <div className="container-fluid text-center align-items-center" style={{paddingTop:'40px'}}>
   <header>
-
-    <div className="d-flex justify-content-around">
+  <DropdownCombo />
+    {/* <div className="d-flex justify-content-around">
     
     
     <form className="d-flex justify-content-around">
@@ -32,9 +33,11 @@ const Main = () => {
     </form>
 
 
-    </div>
+    </div> */}
     <br />
   </header>
+
+
 
   <hr />
 
