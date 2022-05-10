@@ -1,9 +1,11 @@
 import React from 'react';
 import DropdownCombo from '../components/Dropdown/Dropdown';
 import { FaBicycle, FaGlobeAmericas, FaHeartbeat, FaHome, FaMoneyBillWave, FaQuestion, FaUserGraduate,  FaShieldAlt } from 'react-icons/fa';
+import { useState } from 'react';
 
 
 const Main = () => {
+
 
   return (    
     <main>
@@ -11,29 +13,9 @@ const Main = () => {
 
   <div className="container-fluid text-center align-items-center" style={{paddingTop:'40px'}}>
   <header>
-  <DropdownCombo />
-    {/* <div className="d-flex justify-content-around">
-    
-    
-    <form className="d-flex justify-content-around">
-    <div className="input-group">
-          <select className="form-select" name="estado" id="estado">
-            <option value=""> Estado</option>
-            <option value="1"> Estado 1</option>
-            <option value="2"> Estado 2</option>
-          </select>
   
+    <DropdownCombo />
 
-          <select className="form-select" name="cidade" id="cidade">
-            <option value=""> Selecione o estado</option>  
-          </select>
-
-        <input id="eixo" type="text" readOnly hidden value="0"></input>
-        </div>
-    </form>
-
-
-    </div> */}
     <br />
   </header>
 

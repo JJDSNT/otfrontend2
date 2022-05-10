@@ -6,6 +6,10 @@ import Main from './Main';
 
 function Layout() {
 
+  const [estado, setEstado] = useState({id:35,uf:'SP'});
+  const [cidade, setcidade] = useState({id:12,uf:'SP',cidade:'Andradina'});
+  const [eixo, setEixo] = useState({id:1,icon:'icon',nome:'Segurança'});
+
   const [collapsed, setCollapsed] = useState<boolean>(false);
   const [toggled, setToggled] = useState<boolean>(false);
 

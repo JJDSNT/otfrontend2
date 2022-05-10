@@ -37,18 +37,30 @@ const DropdownCombo = () => {
     {id:99,uf:'UF'}
   ];
 
-  const [estado, setEstado] = useState({id:11,uf:'RD'});
+  const [estado, setEstado] = useState({id:35,uf:'SP'});
 
 
 return(
-
+<div className="d-flex justify-content-around">
+  <div className="col-4">
     <DropdownList
     value={estado}
     data={estados}
     dataKey='id'
     textField='uf'
     onChange={value => setEstado(value)}
-/>
+    />
+  </div>
+  <div className="col-8">
+    <DropdownList
+    value={estado}
+    data={estados}
+    dataKey='id'
+    textField='uf'
+    onChange={value => setEstado(value)}
+    />
+  </div>
+</div>
 
 );
 };
