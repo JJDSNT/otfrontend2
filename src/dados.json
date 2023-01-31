@@ -1,0 +1,46 @@
+[
+  {
+    "codigo_ibge": "1100015",
+    "cidade": "Alta Floresta D'Oeste",
+    "estado": "RO",
+    "eixo": "Saúde",
+    "indicador": "Taxa de mortalidade infantil",
+    "descricao_indicador": "Número de mortes de crianças com menos de 1 ano de idade a cada 1.000 nascimentos vivos",
+    "dados": [
+      {
+        "ano": 2019,
+        "valor": 20
+      },
+      {
+        "ano": 2020,
+        "valor": 18
+      }
+    ]
+  },
+  {
+    "codigo_ibge": "1100015",
+    "cidade": "Alta Floresta D'Oeste",
+    "estado": "RO",
+    "eixo": "Educação",
+    "indicador": "Taxa de analfabetismo",
+    "descricao_indicador": "Número de pessoas com mais de 15 anos que não sabem ler ou escrever em relação à população total",
+    "dados": [
+      {
+        "ano": 2016,
+        "valor": 4
+      },
+      {
+        "ano": 2017,
+        "valor": 7
+      },
+      {
+        "ano": 2019,
+        "valor": 10
+      },
+      {
+        "ano": 2020,
+        "valor": 8
+      }
+    ]
+  }
+]
