@@ -6,8 +6,11 @@ import Main from './Main';
 
 function Layout() {
 
+  // eslint-disable-next-line
   const [estado, setEstado] = useState({id:35,uf:'SP'});
+  // eslint-disable-next-line
   const [cidade, setcidade] = useState({id:12,uf:'SP',cidade:'Andradina'});
+  // eslint-disable-next-line
   const [eixo, setEixo] = useState({id:1,icon:'icon',nome:'Segurança'});
 
   const [collapsed, setCollapsed] = useState<boolean>(false);
